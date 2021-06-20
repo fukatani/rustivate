@@ -10,7 +10,7 @@ fn add_activate_alias(aliases: &Vec<Alias>, alias_file: &mut BufWriter<fs::File>
     write!(alias_file, "function rustivate() {{\n")?;
     for alias in aliases {
         let alias_command = format!("    alias {}='{}'\n", alias.name, alias.value);
-        println!("{}", alias_command);
+        // println!("{}", alias_command);
         write!(alias_file, "{}", alias_command)?;
     }
     write!(alias_file, "}}\n\n")?;
@@ -21,7 +21,7 @@ fn add_deactivate_alias(aliases: &Vec<Alias>, alias_file: &mut BufWriter<fs::Fil
     write!(alias_file, "function derustivate() {{\n")?;
     for alias in aliases {
         let alias_command = format!("    unalias {}\n", alias.name);
-        println!("{}", alias_command);
+        // println!("{}", alias_command);
         write!(alias_file, "{}", alias_command)?;
     }
     write!(alias_file, "}}\n\n")?;
@@ -40,7 +40,7 @@ fn read_aliases() -> Result<Vec<Alias>> {
     let json_path = if user_settings_path.exists() {
         user_settings_path
     } else {
-        rustivate_home.join("default.json")
+        PathBuf::from("resources/default.json")
     };
     let file = fs::File::open(json_path)?;
     let reader = BufReader::new(file);
