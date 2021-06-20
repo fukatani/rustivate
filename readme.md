@@ -29,7 +29,7 @@ And If you want to use rust alternative CLI again, `rustivate` in shell.
 - [exa](https://github.com/ogham/exa): Modern replacement for `ls`
 - [ripgrep](https://github.com/BurntSushi/ripgrep): Fast line-oriented search tool alternative to `grep`
 - [fd](https://github.com/sharkdp/fd): Simple, fast and user-friendly alternative to `find`
-- [bat](https://github.com/sharkdp/bat): cat(1) clone with syntax highlighting and Git integration.
+- [bat](https://github.com/sharkdp/bat): `cat` clone with syntax highlighting and Git integration.
 - [dust](https://github.com/bootandy/dust): Like `du` but more intuitive
 
 ### Environment
