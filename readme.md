@@ -31,6 +31,7 @@ And If you want to use rust alternative CLI again, `rustivate` in shell.
 - [fd](https://github.com/sharkdp/fd): Simple, fast and user-friendly alternative to `find`
 - [bat](https://github.com/sharkdp/bat): `cat` clone with syntax highlighting and Git integration.
 - [dust](https://github.com/bootandy/dust): Like `du` but more intuitive
+- [bottom](https://github.com/ClementTsang/bottom): graphical process/system monitor
 
 ### Environment
 Currently, `rustivate` supports Linux and bash only.

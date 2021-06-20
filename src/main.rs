@@ -59,7 +59,7 @@ fn get_alias_sh() -> PathBuf {
 }
 
 fn install_rust_tools() {
-    let rust_tools = ["bat", "exa", "fd-find", "ripgrep", "du-dust"];
+    let rust_tools = ["bat", "exa", "fd-find", "ripgrep", "du-dust", "bottom"];
     for &tool in rust_tools.iter() {
         println!("Start install {}", tool);
         let output = Command::new("cargo").arg("install").arg(tool).output().expect("");

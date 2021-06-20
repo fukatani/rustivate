@@ -3,6 +3,7 @@
     {"name": "ls", "value": "exa"},
     {"name": "du", "value": "dust"},
     {"name": "cat", "value": "bat"},
-    {"name": "find", "value": "fd"}
+    {"name": "find", "value": "fd"},
+    {"name": "top", "value": "btm"}
 ]
 
